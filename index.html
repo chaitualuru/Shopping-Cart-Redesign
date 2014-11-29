@@ -1,0 +1,114 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+  <title>Shopping Cart Redesign</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</head> 
+<body> 
+
+<div data-role="page">
+
+  <div data-role="content"> 
+
+    <div data-role="collapsible-set" data-theme="a" data-content-theme="d" id="cart">
+
+      <div data-role="collapsible" class="cartItem" data-collapsed-icon="delete" data-expanded-icon="delete" data-iconpos="right">
+        <h3>Sony PlayStation 4 <span id="money0">US $374.99</span></h3>
+        <ul data-role="listview">
+          <li>
+          <img src="images/empty.png" class="image">
+            <form>
+              <div data-role="rangeslider" data-highlight="false" class="slider">
+                  <input type="range" name="range-8a" id="range-8a" min="0" max="100" value="1">
+              </div>
+            </form>
+          <p class="description"><span class = "shipping">Standard</span><br><span class="day">(4 business days)</span></p>
+          <p class="amount">Free</p>
+          </li>
+        </ul>
+      </div>
+
+      <div data-role="collapsible" class="cartItem" data-collapsed-icon="delete" data-expanded-icon="delete" data-iconpos="right">
+        <h3>Introduction to Algorithms, 3rd Edition <span id="money1">US $78.30</span></h3>
+        <ul data-role="listview">
+          <li>
+          <img src="images/one.png" class="image">
+            <form>
+              <div data-role="rangeslider" data-highlight="false" class="slider">
+                  <input type="range" name="range-8a" id="range-8a" min="0" max="100" value="1">
+              </div>
+            </form>
+          <p class="description"><span class = "shipping">Standard</span><br><span class="day">(4 business days)</span></p>
+          <p class="amount">+ 10.50</p>
+          </li>
+        </ul>
+      </div>
+
+      <div data-role="collapsible" class="cartItem" data-collapsed-icon="delete" data-expanded-icon="delete" data-iconpos="right">
+        <h3>UP 24 <span id="money2">US $79.99</span></h3>
+        <ul data-role="listview">
+          <li>
+          <img src="images/two.png" class="image" id="up24">
+            <form>
+              <div data-role="rangeslider" data-highlight="false" class="slider">
+                  <input type="range" name="range-8a" id="range-8a" min="0" max="100" value="1">
+              </div>
+            </form>
+          <p class="description"><span class = "shipping">Standard</span><br><span class="day">(4 business days)</span></p>
+          <p class="amount">+ 2.30</p>
+          </li>
+        </ul>
+      </div>
+
+      <div data-role="collapsible" class="cartItem" data-collapsed-icon="delete" data-expanded-icon="delete" data-iconpos="right">
+        <h3>Apple iPhone 6, Space Gray, 16 GB (Unlocked) <span id="money3">US $798.00</span></h3>
+        <ul data-role="listview">
+          <li>
+          <img src="images/three.png" class="image" id="phoneimage">
+            <form>
+              <div data-role="rangeslider" data-highlight="false" class="slider">
+                  <input type="range" name="range-8a" id="range-8a" min="0" max="100" value="1">
+              </div>
+            </form>
+          <p class="description"><span class = "shipping">Standard</span><br><span class="day">(4 business days)</span></p>
+          <p class="amount">Free</p>
+          </li>
+        </ul>
+      </div>
+
+      <div data-role="collapsible" class="cartItem" data-collapsed-icon="delete" data-expanded-icon="delete" data-iconpos="right">
+        <h3>Spalding NBA Street Basketball <span id="money4">US $12.99</span></h3>
+        <ul data-role="listview">
+          <li>
+          <img src="images/four.png" class="image">
+            <form>
+              <div data-role="rangeslider" data-highlight="false" class="slider">
+                  <input type="range" name="range-8a" id="range-8a" min="0" max="100" value="1">
+              </div>
+            </form>
+          <p class="description"><span class = "shipping">Standard</span><br><span class="day">(4 business days)</span></p>
+          <p class="amount">+ 6.50</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- <div data-role="collapsible" class="cartItem">
+        <h3><span id="Shipping Expenses">US $19.30</span></h3>
+      </div> -->
+
+      <ul data-role="listview" data-inset="true" data-shadow="false" data-theme="e" id="total">
+        <li data-icon="false"><span id="expenses">Shipping Expenses</span><span id="shippingtotal">US $19.30</span><br class="break"><br class="break"><span id="totaltag">Total</span><span id="totalexpense">US $1363.57</span></li>      
+      </ul>
+    </div>
+    <div id="button">
+      <button class="ui-btn ui-btn-inline" data-theme="b" data-icon="arrow-r" data-iconpos="right">Checkout</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
